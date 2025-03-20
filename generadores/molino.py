@@ -2,7 +2,11 @@ import random
 import json
 import time
 import sys
-from datetime import datetime
+import requests  # Importamos requests para enviar datos a FastAPI
+from datetime import datetime, timezone
+
+# URL del servidor FastAPI
+API_URL = "http://localhost:8000/ingresar_dato"  # Ajusta si el servidor está en otra IP
 
 def generar_dato(id_generador: int, prob_error: float = 0.1):
     """Genera un dato sintético para un generador eólico con una probabilidad de error en un solo campo."""
@@ -11,7 +15,7 @@ def generar_dato(id_generador: int, prob_error: float = 0.1):
     potencia = round(random.uniform(500, 3000), 2)  # kW
     velocidad_viento = round(random.uniform(3, 25), 2)  # m/s
     temperatura = round(random.uniform(10, 90), 2)  # °C
-    timestamp = datetime.utcnow().isoformat()
+    timestamp = datetime.now(timezone.utc).isoformat()  # Con zona horaria UTC
     
     # Introducir error en un solo campo con probabilidad N
     if random.random() < prob_error:
@@ -35,13 +39,22 @@ def generar_dato(id_generador: int, prob_error: float = 0.1):
 def enviar_datos(id_generador):
     while True:
         dato = generar_dato(id_generador)
-        print(json.dumps(dato, indent=2))  # Simula envío de datos mostrando en consola
+        print(json.dumps(dato, indent=2))  # Muestra los datos generados en consola
+        
+        try:
+            # Enviar datos a FastAPI
+            response = requests.post(API_URL, json=dato, timeout=5)
+            print(f"Respuesta del servidor: {response.status_code} - {response.text}")
+        except requests.exceptions.RequestException as e:
+            print(f"[GEN-{id_generador}] Error de conexión: {e}")
+
         time.sleep(2)  # Generar datos cada 2 segundos
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Uso: python eolico.py <id_generador>")
+        print("Uso: python generador.py <id_generador>")
         sys.exit(1)
     
     id_generador = int(sys.argv[1])
     enviar_datos(id_generador)
+
