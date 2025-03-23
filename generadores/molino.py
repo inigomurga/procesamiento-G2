@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 # URL del servidor FastAPI
 API_URL = "http://localhost:8000/ingresar_dato"  # Ajusta si el servidor está en otra IP
 
-def generar_dato(id_generador: int, prob_error: float = 0.1):
+def generar_dato(id_generador: int, prob_error: float = 0.15):
     """Genera un dato sintético para un generador eólico con una probabilidad de error en un solo campo."""
     
     # Datos correctos

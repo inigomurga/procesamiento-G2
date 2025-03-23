@@ -1,0 +1,33 @@
+2025-03-24 00:29:23,398 - ERROR - [GEN-1] Potencia inv�lida: -1000.0, debe estar entre 0 y 5000 kW
+2025-03-24 00:29:35,524 - ERROR - [GEN-1] Potencia inv�lida: nan, debe estar entre 0 y 5000 kW
+2025-03-24 00:29:51,722 - ERROR - [GEN-1] Temperatura inv�lida: 200.0, debe estar entre -50�C y 100�C
+2025-03-24 00:32:45,658 - ERROR - [GEN-2] Potencia inv�lida: nan, debe estar entre 0 y 5000 kW
+2025-03-24 00:32:49,845 - ERROR - [GEN-1] Temperatura inv�lida: -273.0, debe estar entre -50�C y 100�C
+2025-03-24 00:32:50,442 - ERROR - [GEN-4] Velocidad del viento inv�lida: -5.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:32:54,496 - ERROR - [GEN-4] Potencia inv�lida: -1000.0, debe estar entre 0 y 5000 kW
+2025-03-24 00:33:12,696 - ERROR - [GEN-10] Potencia inv�lida: nan, debe estar entre 0 y 5000 kW
+2025-03-24 00:33:28,883 - ERROR - [GEN-10] Velocidad del viento inv�lida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:33:47,067 - ERROR - [GEN-2] Velocidad del viento invalida: -5.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:34:35,611 - ERROR - [GEN-2] Temperatura invalida: -273.0, debe estar entre -50�C y 100�C
+2025-03-24 00:34:36,480 - ERROR - [GEN-4] Velocidad del viento invalida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:34:38,531 - ERROR - [GEN-1] Potencia invalida: 99999.0, debe estar entre 0 y 5000 kW
+2025-03-24 00:34:45,632 - ERROR - [GEN-7] Velocidad del viento invalida: -5.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:35:11,492 - ERROR - [GEN-2] Velocidad del viento invalida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:35:20,834 - ERROR - [GEN-6] Potencia invalida: 99999.0, debe estar entre 0 y 5000 kW
+2025-03-24 00:36:01,665 - ERROR - [GEN-7] Velocidad del viento invalida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:36:02,038 - ERROR - [GEN-8] Temperatura invalida: -273.0, debe estar entre -50�C y 100�C
+2025-03-24 00:36:06,367 - ERROR - [GEN-1] Temperatura invalida: -273.0, debe estar entre -50�C y 100�C
+2025-03-24 00:36:10,153 - ERROR - [GEN-8] Potencia invalida: -1000.0, debe estar entre 0 y 5000 kW
+2025-03-24 00:36:13,062 - ERROR - [GEN-5] Velocidad del viento invalida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:36:13,424 - ERROR - [GEN-6] Temperatura invalida: 200.0, debe estar entre -50�C y 100�C
+2025-03-24 00:36:14,268 - ERROR - [GEN-10] Velocidad del viento invalida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:36:14,458 - ERROR - [GEN-1] Velocidad del viento invalida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:36:17,879 - ERROR - [GEN-7] Temperatura invalida: -273.0, debe estar entre -50�C y 100�C
+2025-03-24 00:36:18,507 - ERROR - [GEN-1] Temperatura invalida: -273.0, debe estar entre -50�C y 100�C
+2025-03-24 00:36:25,223 - ERROR - [GEN-5] Velocidad del viento invalida: -5.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:36:30,368 - ERROR - [GEN-8] Velocidad del viento invalida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:36:31,338 - ERROR - [GEN-3] Temperatura invalida: -273.0, debe estar entre -50 C y 100�C
+2025-03-24 00:36:35,358 - ERROR - [GEN-1] Temperatura invalida: -273.0, debe estar entre -50 C y 100 C
+2025-03-24 00:36:39,409 - ERROR - [GEN-1] Potencia invalida: nan, debe estar entre 0 y 5000 kW
+2025-03-24 00:36:42,344 - ERROR - [GEN-7] Velocidad del viento invalida: 100.0, debe estar entre 0 y 50 m/s
+2025-03-24 00:36:43,443 - ERROR - [GEN-1] Potencia invalida: 99999.0, debe estar entre 0 y 5000 kW
