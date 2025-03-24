@@ -12,7 +12,7 @@ Para el desarrollo de este y los demás scripts hemos hecho uso del lenguaje pyt
 
 2. Desarrollo del script de concentrador
 
-Para el desarrollo de este script, hicimos uso de FastAPI para generar unos métodos los cuales verifican la validez de los datos. Con los datos validados se realizan diferentes agregaciones.
+Para el desarrollo de este script, hicimos uso de FastAPI para generar unos métodos los cuales verifican la validez de los datos. Con el historial de datos validados se va realizando una agregación del promedio.
 
 3. Comprobar el funcionamiento 
 
@@ -62,6 +62,10 @@ A la hora poner en marcha el programa, hacemos uso de un entorno virtual para no
 ## Posibles vías de mejora
 
 Para mejorar el reto hemos pensado en el desarrollo de una persistencia en el programa. Esto sería a través de una base de datos de Postgres. Lamentablemente, no hemos podido conseguir desarrollar esta mejora.
+
+Por otro lado, hemos implementado la mejora de log. Esta mejora consiste en realizar un registro continuo de los datos erróneos que se generan pudiendo verificar que el programa funciona correctamente y siendo interesante en caso de haber fallos en el sistema o realizar un análisis de los molinos.
+
+Por último, la creación de un archivo "lanzar.bat" que se utiliza como lanzador de todos los molinos. De esta forma la puesta en marcha de los molinos es más práctica y automatizada.
 
 ## Problemas / Retos encontrados
 
