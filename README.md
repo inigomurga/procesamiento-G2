@@ -8,7 +8,7 @@ Este proyecto es un reto de procesamiento de datos desarrollado con FastAPI. Par
 
 1. Desarrollo de los scripts de generadores eólicos
 
-Para el desarrollo de este y los demás scripts hemos hecho uso del lenguaje python. Hemos decidido que la probabilidad de error será del 10%. Para generar los datos, hacemos uso de una funcionalidad crear dato donde en base a la probabilidad de error se generará un dato válido o erróneo.
+Para el desarrollo de este y los demás scripts hemos hecho uso del lenguaje python. Hemos decidido que la probabilidad de error será del 10%. Para generar los datos, hacemos uso de una funcionalidad crear datos donde en base a la probabilidad de error se generará un dato válido o erróneo. Para no tener que abrir 10 diferentes terminales tenemos un archivo "lanzar.bas" que ejecutara 10 veces el archivo "molino.py".
 
 2. Desarrollo del script de concentrador
 
@@ -16,7 +16,7 @@ Para el desarrollo de este script, hicimos uso de FastAPI para generar unos mét
 
 3. Comprobar el funcionamiento 
 
-A la hora poner en marcha el programa, hacemos uso de un entorno virtual para no tener que instalar todas las librerías en cada uno de los portátiles. Seguidamente, realizamos las comprobaciones pertinentes para asegurar el funcionamiento del programa.
+A la hora poner en marcha el programa, hacemos uso de un entorno virtual para no tener que instalar todas las librerías en cada uno de los portátiles. Seguidamente, realizamos las comprobaciones pertinentes para asegurar el funcionamiento del programa. Destacar que los datos erróneos se irán registrando en el archivo "errores.log" de la carpeta log.
 
 ## Instalación
 
@@ -51,13 +51,12 @@ A la hora poner en marcha el programa, hacemos uso de un entorno virtual para no
     ```
 4. Entrar a los generadores y ejercutarlo:
     ```bash
-    cd ..
     
     cd ..
     
     cd generadores
     
-    python lanzador_de_generadores.py
+    lanzar.bat
     ```
 
 ## Posibles vías de mejora
@@ -75,3 +74,4 @@ A su vez, a la hora de desarrollar la persistencia del programa nos han surgido 
 Implementar la mejora de persistencia incluyendo una base de datos mongodb.
 
 Implementar seguridad en las comunicaciones entre los generadores y el concentrador.
+
